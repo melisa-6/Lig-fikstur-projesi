@@ -1,0 +1,60 @@
+GEREKSİNİM ANALİZİ
+Proje Adı: Lig Fikstürü Oluşturma Projesi
+Geliştirici:Melisa Taşkara -436581
+
+1. Giriş
+Proje C dili kullanarak 19 takımdan oluşan bir futbol lig fikstürü oluşturmayı amaçlar.
+
+2. Amaç
+Projenin temel amacı:
+*19 takımdan oluşan bir ligin fikstürünü oluşturmak.
+* 19 takım olduğu için her hafta bir takımın dinlenmesini sağlamak (Bosgecentakim).
+* Fikstürü ekrana yazdırmak ve bir dosyada saklamak.
+* Eksik veya hatalı girişlerde hata mesajları göstermek.
+
+3. Fonksiyonel Gereksinimler
+*takimlar.txt dosyasını okuyarak takım isimlerini belleğe yüklemelidir.
+*lig sistemine göre 38 haftalık bir fikstür oluşturmalıdır.
+*Takımların her hafta rastgele eşleşmesini sağlamalıdır.
+*19 takım olduğu için her hafta bir takım Bos geçmelidir.
+*Fikstür ekrana yazdırılmalı ve fikstur.txt dosyasına kaydedilmelidir.
+*Eğer takimlar.txt eksikse veya hatalıysa, uyarı mesajı vermelidir.
+*Takım isimleri program içerisine sabit olarak yazılmamalıdır, mutlaka dosyadan okunmalıdır.
+
+4. Fonksiyonel Olmayan Gereksinimler
+*Kod okunabilir ve açıklamalı olmalıdır.
+*Fikstür algoritması dengeli ve adil olmalı.
+*Dosya işlemleri güvenilir ve hatasız yapılmalı.
+*Kullanıcı dostu bir arayüz sağlanmalı, çalıştırma talimatları README.md dosyasında belirtilmelidir.
+
+5. Kısıtlamalar
+Program C dili ile yazılmalı.
+Takım isimleri dosyadan okunacaktır, sabit olarak kod içerisinde tanımlanmayacaktır.
+GitHub repository’sinde tüm dosyalar eksiksiz bulunmalıdır.
+Her hafta bir takım Bos geçmelidir.
+Toplamda 38 hafta sürecek bir fikstür oluşturulmalıdır.
+
+6. Çıktı Örnekleri
+* Örnek 1. Hafta Çıktısı:
+ 1. Hafta
+Bu hafta bos gecen takım: ADANA DEMİRSPOR A.S.
+GALATASARAY A.S. vs FENERBAHCE A.S.
+REEDER SAMSUNSPOR vs BESIKTAS A.S.
+IKAS EYUPSPOR vs GOZTEPE A.S.
+RAMS BASAKSEHIR FUTBOL KULUBU vs CAYKUR RIZESPOR A.S.
+TRABZONSPOR A.S. vs GAZIANTEP FUTBOL KULUBU A.S.
+KASIMPAŞA A.S. vs COREDON ALANYASPOR
+ONVO ANTALYASPOR vs TUMOSAN KONYASPOR
+SIPAY BODRUM FK vs NET GLOBAL SIVASSPOR
+BELLONA KAYSERİSPOR vs ATAKAS HATAYSPOR
+
+
+7. Kullanılacak Dosyalar
+
+*takimlar.txt -> 19 takımın isimlerini içeren dosya.
+*fikstur.txt -> Oluşturulan fikstürün kayıtlı olduğu dosya.
+*fiksturolusturma.c -> Programın ana kodlarını içeren C dosyası.
+*Gereksinim Analizi.txt -> Bu gereksinim analizinin bulunduğu dosya.
+*README.md -> Proje hakkında açıklamalar ve kullanım talimatları.
+*ornekcikti-> Örnek çalıştırma ekran görüntüleri.
+
