@@ -60,9 +60,7 @@ void fiksturolustur() {
         bostakim = rand() % 19;  // Bir takim bos gecilir
         eslesme[bostakim] = 1;  // Bos gecilen takim isaretlenir
         
-// Boş geçen takımı ekrana ve dosyaya yazdır
-printf("Hafta %d: %s takimı boş geçildi.\n", hafta + 1, takimlar[bostakim].takimadi);
-fprintf(dosya,"Hafta %d: %s takimı boş geçildi.\n", hafta + 1, takimlar[bostakim].takimadi);
+
 
         for (int macsayisi = 0; macsayisi < 9; macsayisi++) {
             int evsahibi, rakip;
@@ -156,7 +154,10 @@ void fiksturyazdir(FILE *dosya) {
         printf("\n\n  %d. Hafta\n\n", hafta + 1);
         fprintf(dosya, "\n\n  %d. Hafta\n\n", hafta + 1);
         
-            
+// Bos gecen takımı ekrana ve dosyaya yazdır
+printf("bos gecen takim: %s \n", takimlar[bostakim].takimadi);
+fprintf(dosya,"bos gecen takim: %s \n", takimlar[bostakim].takimadi);
+
         for (int macsayisi = 0; macsayisi < 9; macsayisi++) {
             int evsahibi = eslesmeler[hafta][macsayisi].evsahibi;
             int rakip = eslesmeler[hafta][macsayisi].rakip;
@@ -193,13 +194,8 @@ int main() {
     takimlarioku();  // Takimlari oku
     takimguclerinioku();  // Takimlarin guclerini oku
     fiksturolustur();  // Fiksturu olustur
-    FILE *dosya = fopen("fikstur.txt", "w");  // Fiksturu dosyaya yaz
+    FILE *dosya = fopen("fikstur.txt", "w");  // Fiksturu dosyaya yazar
 
     fiksturyazdir(dosya);  // Fiksturu yazdir
     takimlariyazdir(dosya);  // Takimlari ve puanlari yazdir
-
-    fclose(dosya);  // Dosyayi kapat
-
-    return 0;
 }
-
